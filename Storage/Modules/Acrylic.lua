@@ -35,7 +35,6 @@ function Acrylic.new(Options)
 		
 		Object = Options.Object,
 		Intensity = Options.Intensity or 0.3,
-		Style = Options.Style or {}
 		
 	}, Acrylic)
 
@@ -70,7 +69,7 @@ function Acrylic.new(Options)
 	Part.CanTouch = false
 	Part.Transparency = 1 - 1e-7
 	Part.Material = Enum.Material.Glass
-	Part.Size = Vector3.new(1, 1, 1) * 0.01
+	Part.Size = Vector3.new(1, 1, 1) * 0.009
 	Part.Parent = CurrentCamera
 
 	local BlockMesh = Instance.new("BlockMesh")
